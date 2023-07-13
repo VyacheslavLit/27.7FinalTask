@@ -1,0 +1,6 @@
+select id from users where n_name = 'slawa'
+insert message (id_from, id_to, text) value ('12', '8', 'buy')
+insert log (log) value ('13.07.2023 17:28:29 «апрос личной переписки по 2 пользовател€м.');
+select id from users where n_name = 'admin'
+select id from users where n_name = 'slawa'
+select id, id_from, id_to, date, text, status from message where (id_from = '12' and id_to = '8') or (id_from = '8' and id_to = '12');
